@@ -22,7 +22,7 @@ export default function Home() {
         method: 'post',
         url: 'https://adn-tester.vercel.app/api/mutation',
         data: {
-            dna: state.dna.value.split(',')
+            dna: state.dna.value.split(','),
         }
     }).then((res) => {
         setApiResults(res.data)
