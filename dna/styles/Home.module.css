@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #090e11;
+}
+
+.dnaTestingContainer {
+  display: flex;
+  color: #b1b3b5;
+  background-color: #2a2f32;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0, .06),0 2px 5px 0 rgba(0,0,0, .2);
+  padding: 1em;
+  max-width: 614px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.1em;
+}
+
+
+.formToSendDnaSequence {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 0;
+  align-items: center;
+}
+
+.dnaSuccess {
+  display: flex;
+  flex: 0.95;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 2em;
+  background-color: #33383b;
+  color: #ffffff;
+}
+
+.dnaFailed {
+  display: flex;
+  flex: 0.95;
+  outline: none;
+  border: 1px solid #ed4143;
+  padding: 9px;
+  border-radius: 2em;
+  background-color: #33383b;
+  color: #ffffff;
+
+}
+
+.warningNote {
+  color: #faa81a;
+  font-size: 0.75rem;
+}
+
+.buttonToSendAdn {
+  outline: none;
+  display: flex;
+  align-items: center;
+  border-radius: 2em;
+  border: none;
+  background-color: transparent;
+  color: #b1b3b5;
+  transition: 0.2s ease;
+}
+
+.buttonToSendAdn:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+.hasMutation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.hasMutation > span {
+  font-weight: bold;
+}
+
+.hasMutationTrue {
+  color: #3ba55d;
+}
+
+.hasMutationFalse {
+  color: #ed4143;
+}
+
+.getStats {
+  display: flex;
+  padding: 1em 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.getStats > button {
+  background-color: #5865f2;
+  color: #ffffff;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.2em;
+  transition: 0.2s ease;
+}
+
+.getStats > button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.getStats > div {
+  display: flex;
+  flex-direction: column;
+}
