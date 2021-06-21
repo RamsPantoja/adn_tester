@@ -1,1 +1,0 @@
-{"apis":{"dynamic":{},"nonDynamic":{"/api/hello":"pages/api/hello.js","/api/mutation":"pages/api/mutation.js","/api/stats":"pages/api/stats.js"}},"domainRedirects":{},"enableHTTPCompression":false}
