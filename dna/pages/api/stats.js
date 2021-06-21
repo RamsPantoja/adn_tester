@@ -16,5 +16,3 @@ export default async function getStats(req, res) {
 
         return res.status(200).send(stats); 
 }
-
-export default getStats;
