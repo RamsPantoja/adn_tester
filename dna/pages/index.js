@@ -20,7 +20,7 @@ export default function Home() {
 
     axios({
         method: 'post',
-        url: 'https://dna-tester.vercel.app/api/mutation',
+        url: 'https://adn-tester.vercel.app/api/mutation',
         data: {
             dna: state.dna.value.split(',')
         }
@@ -36,7 +36,7 @@ export default function Home() {
   }, [state]);
 
   const getStats = async () => {
-    const res = await fetch('https://dna-tester.vercel.app/api/stats');
+    const res = await fetch('https://adn-tester.vercel.app/api/stats');
     const stats = await res.json();
     setStats(stats);
   }
