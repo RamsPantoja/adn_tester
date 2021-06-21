@@ -1,9 +1,7 @@
 import dbConnect from "../../lib/dbConnect";
 import Dna from "../../lib/dna";
 
-const getStats = async (req, res) => {
-    let stats;
-    if (req.method === 'GET') {
+export default async function getStats(req, res) {
         await dbConnect();
 
         const count_mutations = await Dna.find({hasMutation: true});
@@ -15,9 +13,8 @@ const getStats = async (req, res) => {
             count_no_mutation: count_no_mutation.length,
             ratio: ratio,
         }
-    }
 
-    return res.status(200).send(stats);
+        return res.status(200).send(stats); 
 }
 
 export default getStats;
