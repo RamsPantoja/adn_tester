@@ -1,7 +1,7 @@
 import dbConnect from "../../lib/dbConnect";
 import Dna from "../../lib/dna";
 
-const getStats = (req, res) =>  {
+const getStats = async (req, res) =>  {
     if (req.method === 'GET') {
         await dbConnect();
 
