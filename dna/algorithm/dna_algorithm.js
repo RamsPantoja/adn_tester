@@ -1,6 +1,6 @@
 class HasMutation {
-    constructor(data) {
-        this.dna = data.dna;
+    constructor(dna) {
+        this.dna = dna;
         this.baseDnaInitials = ['A', 'T', 'C', 'G'];
     }
 

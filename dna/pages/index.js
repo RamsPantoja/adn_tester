@@ -17,10 +17,9 @@ export default function Home() {
 
   const handleOnSubmit = useCallback((e) => {
     e.preventDefault();
-
     axios({
         method: 'post',
-        url: 'https://adn-tester.vercel.app/api/mutation',
+        url: '/api/mutation',
         data: {
             dna: state.dna.value.split(','),
         }
@@ -36,7 +35,7 @@ export default function Home() {
   }, [state]);
 
   const getStats = async () => {
-    const res = await fetch('https://adn-tester.vercel.app/api/stats');
+    const res = await fetch('/api/stats');
     const stats = await res.json();
     setStats(stats);
   }

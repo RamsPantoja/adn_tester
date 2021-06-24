@@ -4,10 +4,9 @@ import Dna from "../../lib/dna";
 
 const dnaHasMutation = async (req, res) => {
   if (req.method === 'POST') {
-    const data = req.body
-
+    const data = req.body;
     
-    const newHasMutation = new HasMutation(data);
+    const newHasMutation = new HasMutation(data.dna);
 
     const getResults= newHasMutation.getResults();
     const hasMutation = newHasMutation.hasMutation();
@@ -42,6 +41,8 @@ const dnaHasMutation = async (req, res) => {
     } else {
       return res.status(403).send(objectResults);
     }
+
+    //return res.status(200).send(data.dna)
   }
 }
 
